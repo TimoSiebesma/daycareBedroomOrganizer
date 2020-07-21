@@ -1,0 +1,267 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--middle);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--middle);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--standout);
+}
+
+:root {
+  --white: #f5eae0;
+  --light: #b6c7d8;
+  --middle: #90b5db;
+  --dark: #567a9e;
+  --text: #022b3a;
+  --standout: #d46b58;
+  --shadow: 1px 1px 3px rgba(0, 0, 0, 0.486);
+  --hoverShadow: 2px 2px 6px rgba(0, 0, 0, 0.486);
+}
+
+html {
+  height: 100%;
+  margin: 0%;
+  background-color: var(--middle);
+  background-image: url("./app/pages/pictures/bal.png"), url("./app/pages/pictures/huis.png"),
+    url("./app/pages/pictures/wolk2.png"), url("./app/pages/pictures/bloem2.png"),
+    url("./app/pages/pictures/zon.png"), url("./app/pages/pictures/bal.png"),
+    url("./app/pages/pictures/huis2.png"), url("./app/pages/pictures/wolk.png"),
+    url("./app/pages/pictures/bloem.png"), url("./app/pages/pictures/zon.png"),
+    url("./app/pages/pictures/wolk.png"), url("./app/pages/pictures/bloem2.png"),
+    url("./app/pages/pictures/zon.png"), url("./app/pages/pictures/bal.png"),
+    url("./app/pages/pictures/huis.png"), url("./app/pages/pictures/wolk2.png"),
+    url("./app/pages/pictures/bloem.png"), url("./app/pages/pictures/zon.png"),
+    url("./app/pages/pictures/bal.png"), url("./app/pages/pictures/huis2.png"),
+    url("./app/pages/pictures/zon.png"), url("./app/pages/pictures/bal.png"),
+    url("./app/pages/pictures/huis.png"), url("./app/pages/pictures/wolk.png"),
+    url("./app/pages/pictures/bloem2.png"), url("./app/pages/pictures/zon.png"),
+    url("./app/pages/pictures/bal.png"), url("./app/pages/pictures/huis.png"),
+    url("./app/pages/pictures/wolk.png"), url("./app/pages/pictures/bloem.png"),
+    url("./app/pages/pictures/huis2.png"), url("./app/pages/pictures/wolk2.png"),
+    url("./app/pages/pictures/bloem.png"), url("./app/pages/pictures/zon.png"),
+    url("./app/pages/pictures/bal.png"), url("./app/pages/pictures/huis2.png"),
+    url("./app/pages/pictures/wolk.png"), url("./app/pages/pictures/bloem.png"),
+    url("./app/pages/pictures/zon.png"), url("./app/pages/pictures/bal.png"),
+    url("./app/pages/pictures/bloem2.png"), url("./app/pages/pictures/bal.png"),
+    url("./app/pages/pictures/wolk2.png"), url("./app/pages/pictures/zon.png"),
+    url("./app/pages/pictures/huis2.png");
+
+  background-repeat: no-repeat;
+  background-size: 5.6vmin, 7.6vmin, 8.4vmin, 6.6vmin, 9.2vmin, 6.8vmin, 5.6vmin, 8.6vmin, 5.4vmin,
+    8.8vmin, 8.6vmin, 7vmin, 8vmin, 8.8vmin, 6.6vmin, 8.2vmin, 5.4vmin, 8.8vmin, 6.8vmin, 7.6vmin,
+    8.4vmin, 6.2vmin, 6.4vmin, 8vmin, 5.8vmin, 9.4vmin, 7vmin, 5.4vmin, 10.2vmin, 6.4vmin, 5.6vmin,
+    9vmin, 7vmin, 7.8vmin, 7.4vmin, 5.6vmin, 8.4vmin, 6.8vmin, 9.8vmin, 6.6vmin, 7.4vmin, 6.2vmin,
+    9vmin, 7.8vmin, 5.6vmin;
+
+  background-position-x: 3vw, 12vw, 22vw, 30vw, 43vw, 54vw, 65vw, 74vw, 82vw, 92vw, 4vw, 14vw, 23vw,
+    34vw, 43vw, 51vw, 64vw, 74vw, 83vw, 95vw, 2vw, 11vw, 24vw, 34vw, 44vw, 54vw, 62vw, 71vw, 84vw,
+    95vw, 3vw, 14vw, 22vw, 31vw, 45vw, 54vw, 63vw, 74vw, 82vw, 92vw, 4vw, 24vw, 43vw, 64vw, 82vw;
+  background-position-y: 5vh, 16vh, 8vh, 17vh, 5vh, 16vh, 6vh, 15vh, 8vh, 17vh, 25vh, 37vh, 24vh,
+    35vh, 28vh, 37vh, 26vh, 36vh, 25vh, 35vh, 48vh, 58vh, 45vh, 56vh, 44vh, 57vh, 48vh, 56vh, 47vh,
+    55vh, 64vh, 78vh, 67vh, 76vh, 67vh, 75vh, 65vh, 77vh, 67vh, 76vh, 87vh, 86vh, 84vh, 87vh, 87vh;
+
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.6vmin;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button,
+.button,
+input[type="submit"],
+a,
+Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: normal;
+  margin: 2%;
+  background: var(--light);
+  color: var(--text);
+  text-align: center;
+  border-radius: 7px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  /* padding: 8px; */
+  outline: none;
+  border: 1.1px solid var(--text);
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.8vh 1.3vw;
+  box-shadow: var(--shadow);
+}
+
+.buttons {
+  width: 100%;
+  grid-area: buttons;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.miniButtonRight {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-size: 1rem;
+  padding: 1.8vh 1.3vw;
+  margin: 0px;
+}
+
+.miniButtonLeft {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-size: 1rem;
+  padding: 10px 4px;
+  padding: 1.8vh 1.3vw;
+  margin: 0px;
+}
+
+button:hover,
+.button:hover,
+input[type="submit"]:hover,
+.miniButtonLeft:hover,
+.miniButtonRight:hover,
+.specButton:hover,
+a:hover {
+  background: var(--standout);
+  color: white;
+  box-shadow: var(--hoverShadow);
+}
+
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  color: var(--text);
+
+  border: 1.1px solid var(--text);
+  border-radius: 5px;
+  width: 8vw;
+  margin: 1px;
+  padding: 4px 10px;
+  background: var(--white);
+}
+
+.specButton {
+  color: var(--text);
+  background: var(--middle);
+  outline: none;
+  border-radius: 0%;
+  height: auto;
+  outline: none;
+  /* color: var(--text); */
+
+  font-size: 0.8rem;
+  width: 66.6%;
+  border: 1.1px solid var(--text);
+  padding: 2% 4%;
+  /* background: var(--middle); */
+  text-decoration: none;
+  text-align: center;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  margin: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.specButtonSelected {
+  color: var(--middle);
+  background: var(--text);
+
+  border-radius: 0%;
+  height: auto;
+  outline: none;
+
+  font-size: 0.8rem;
+  width: 70%;
+  border: 1.1px solid var(--text);
+  padding: 2% 4%;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  margin: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alterButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alterButton {
+  font-size: 1rem;
+  width: 33%;
+  padding: 1.8vh 0%;
+}
+
+#createPassword {
+  font-size: 1rem;
+  width: 33%;
+  padding: 1.8vh 0%;
+}
+
+.information {
+  background: var(--white);
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+
+  border: 1.1px solid var(--text);
+  border-radius: 10px;
+}
+
+.alert {
+  background: var(--standout);
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+
+  border: 1.1px solid var(--text);
+  border-radius: 10px;
+}

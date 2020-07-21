@@ -1,0 +1,111 @@
+.mainContainer {
+  display: grid;
+  grid-template-areas: "com bed chi";
+  grid-template-columns: 22.5fr 50fr 22.5fr;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+
+  /* justify-content: stretch; */
+}
+
+.canvasUpperContainer {
+  width: 50fr;
+  grid-area: bed;
+  display: grid;
+  align-content: center;
+  /* margin: 10px; */
+}
+
+.canvasContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  width: auto;
+  height: auto;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.componentsContainer {
+  grid-area: com;
+
+  height: 80vh;
+  width: 22.5fr;
+
+  border: 1.3px solid var(--text);
+  border-radius: 15px;
+  background: var(--dark);
+
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-left: 2vw;
+  /* overflow: auto; */
+}
+
+.childrenSubContainer {
+  grid-area: chi;
+
+  height: 80vh;
+  width: 22.5fr;
+
+  border: 1.3px solid var(--text);
+  border-radius: 15px;
+  background: var(--dark);
+  padding: 10px;
+
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-areas:
+    "title"
+    "content"
+    "buttons";
+  grid-template-rows: 12.5% 72.5% 15%;
+
+  text-align: left;
+  margin-right: 2vw;
+}
+
+.title {
+  grid-area: title;
+  text-shadow: var(--shadow);
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  overflow: auto;
+  margin-bottom: 1vw;
+}
+
+.subTitle {
+  color: white;
+  text-align: left;
+  margin-left: 2vw;
+}
+
+.specialButtons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+
+.spButton {
+  margin: 4px 0px;
+  background-color: var(--standout);
+  color: white;
+  font-size: 0.8rem;
+  /* width: 6vw; */
+}
+
+#bedSizeForm {
+  font-size: 0.9rem;
+}
